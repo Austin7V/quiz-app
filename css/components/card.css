@@ -1,0 +1,42 @@
+/* card */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card {
+  position: relative;
+  background-color: var(--app-card-bg);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+}
+.card__question {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--app-text-main);
+}
+.card__answer {
+  margin: 0 0 20px;
+  font-style: italic;
+  color: var(--app-text-secondary);
+}
+
+/* card-tags */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tag-list__item {
+  padding: 6px 14px;
+  background-color: var(--button-secondery);
+  border-radius: 999px;
+  color: var(--app-text-secondary);
+}

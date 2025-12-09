@@ -1,0 +1,67 @@
+/* card-button */
+.card__toggle {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: none;
+  background-color: var(--button-primary);
+  color: var(--app-text-main);
+}
+.card__toggle:hover {
+  cursor: pointer;
+  background-color: var(--button-secondery);
+}
+
+/* card-bookmark */
+
+.card__bookmark {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 40px;
+}
+.card__bookmark:hover {
+  text-shadow: 0 0 20px var(--button-primary);
+  cursor: pointer;
+}
+
+/* profile-buttons */
+
+.profile__settings {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--app-card-bg);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+}
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle__label {
+  color: var(--app-text-main);
+}
+.toggle__control {
+  background-color: var(--background-dark);
+  width: 50px;
+  height: 26px;
+  border-radius: 999px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+}
+.toggle__thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--background-light);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
