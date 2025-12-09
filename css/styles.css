@@ -142,3 +142,7 @@
   text-shadow: 0 0 20px var(--button-primary);
   cursor: pointer;
 }
+
+.app-nav__item--active {
+  text-shadow: 0 0 30px var(--button-secondery);
+}
