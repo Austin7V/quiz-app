@@ -27,7 +27,7 @@
   --app-card-bg: var(--card-light);
   --app-text-main: var(--text-main-light);
   --app-text-secondary: var(--text-secondery-light);
-
+  background-color: var(--app-bg);
   max-width: 390px;
   display: flex;
   flex-direction: column;
