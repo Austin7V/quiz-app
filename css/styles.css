@@ -87,6 +87,7 @@
   border-radius: 14px;
   border: none;
   background-color: var(--button-primary);
+  color: var(--text-main-light);
 }
 .card__toggle:hover {
   cursor: pointer;
