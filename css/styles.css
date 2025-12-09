@@ -1,0 +1,111 @@
+:root {
+  --primary: #1e2a78;
+  --background-light: #f5f5f7;
+  --background-dark: #121212;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --text-main-light: #2d2d2d;
+  --text-main-dark: #e0e0e0;
+  --text-secondery-light: #555555;
+  --text-secondery-dark: #b0b0b0;
+  --button-primary: #439089;
+  --button-secondery: #4fd1c5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app {
+  max-width: 390px;
+  background-color: var(--background-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-header__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px 16px 80px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--card-light);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+}
+
+.card__question {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-main-light);
+}
+
+.card__answer {
+  margin: 0 0 20px;
+  font-style: italic;
+  color: var(--text-secondery-dark);
+}
+
+.card__toggle {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: none;
+  background-color: var(--button-primary);
+}
+.card__toggle:hover {
+  cursor: pointer;
+  background-color: var(--button-secondery);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tag-list__item {
+  padding: 6px 14px;
+  background-color: var(--button-secondery);
+  border-radius: 999px;
+  color: var(--text-secondery-light);
+}
+.card__bookmark {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 40px;
+  cursor: pointer;
+}

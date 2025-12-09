@@ -3,9 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Quiz App</title>
   </head>
-  <body>
-    <header class="header">hello Quiz!</header>
+  <body class="app app--theme-light">
+    <header class="app-header">
+      <h1 class="app-header__title">Quiz App</h1>
+    </header>
+
+    <main class="app-main page page--home">
+      <section class="card-list">
+        <article class="card">
+          <h2 class="card__question">Question?</h2>
+          <p class="card__answer">Answer</p>
+          <button class="card__toggle">Show Answer</button>
+          <ul class="card__tags tag-list">
+            <li class="tag-list__item">html</li>
+            <li class="tag-list__item">css</li>
+            <li class="tag-list__item">flexbox</li>
+          </ul>
+          <button class="card__bookmark" aria-label="Add to bookmarks">
+            🔖
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <nav class="app-nav">
+        <a href="index.html" class="app-nav__item app-nav__item--active">🏠</a>
+        <a href="bookmarks.html" class="app-nav__item">🔖</a>
+        <a href="profile.html" class="app-nav__item">👤</a>
+      </nav>
+    </footer>
   </body>
 </html>
