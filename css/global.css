@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --primary: #1e2a78;
+  --background-light: #f5f5f7;
+  --background-dark: #121212;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --text-main-light: #2d2d2d;
+  --text-main-dark: #e0e0e0;
+  --text-secondery-light: #555555;
+  --text-secondery-dark: #b0b0b0;
+  --button-primary: #439089;
+  --button-secondery: #4fd1c5;
+}
+
+body {
+  background-color: var(--app-bg);
+}
+
+.app-shell {
+  --app-bg: var(--background-light);
+  --app-card-bg: var(--card-light);
+  --app-text-main: var(--text-main-light);
+  --app-text-secondary: var(--text-secondery-light);
+  background-color: var(--app-bg);
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px 16px 80px;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--app-bg);
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-toggle:checked ~ .app-shell {
+  --app-bg: var(--background-dark);
+  --app-card-bg: var(--card-dark);
+  --app-text-main: var(--text-main-dark);
+  --app-text-secondary: var(--text-secondery-dark);
+}
+.theme-toggle:checked ~ .app-header {
+  background-color: var(--background-dark);
+  border-bottom-color: #333;
+}
+.theme-toggle:checked ~ .app-shell .toggle__control {
+  background-color: var(--button-primary);
+}
+.theme-toggle:checked ~ .app-shell .toggle__thumb {
+  transform: translateX(24px);
+}

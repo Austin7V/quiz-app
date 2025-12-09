@@ -1,0 +1,81 @@
+.profile {
+  flex: 1;
+  padding: 24px 16px 80px;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--app-card-bg);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+}
+
+.profile__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url(https://media.licdn.com/dms/image/v2/D4E03AQGbmRudTRoIhg/profile-displayphoto-crop_800_800/B4EZq_ZaO3IUAI-/0/1764147701164?e=1766620800&v=beta&t=3qMED7rHBUgrRdrGFbW--MyOtzyonJO_Awa7g7xy22U)
+    center/cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--app-text-main);
+}
+
+.profile__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--app-card-bg);
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.profile__section-title {
+  font-size: 1rem;
+  color: var(--app-text-main);
+}
+.profile__text {
+  font-size: 14px;
+  color: var(--app-text-secondary);
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+.profile__stats {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.stats__item {
+  flex: 1;
+  background-color: var(--app-card-bg);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+}
+.stats__icon {
+  font-size: 32px;
+}
+.stats__value {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--app-text-main);
+}
