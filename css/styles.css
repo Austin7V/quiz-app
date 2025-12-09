@@ -122,3 +122,11 @@
   display: flex;
   justify-content: center;
 }
+
+.app-nav {
+  width: 100%;
+  max-width: 390px;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
