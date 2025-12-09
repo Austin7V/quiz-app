@@ -19,8 +19,11 @@
 }
 
 .app {
-  max-width: 390px;
   background-color: var(--background-light);
+}
+
+.app-shell {
+  max-width: 390px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -29,10 +32,12 @@
 
 .app-header {
   text-align: center;
+  width: 100%;
   padding: 10px;
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: var(--background-light);
   border-bottom: 1px solid #ddd;
 }
 
