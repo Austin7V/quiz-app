@@ -111,3 +111,14 @@
   font-size: 40px;
   cursor: pointer;
 }
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-light);
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
