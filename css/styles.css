@@ -109,6 +109,9 @@
   border: none;
   background: none;
   font-size: 40px;
+}
+.card__bookmark:hover {
+  text-shadow: 0 0 20px var(--button-primary);
   cursor: pointer;
 }
 
@@ -129,4 +132,13 @@
   display: flex;
   justify-content: space-around;
   padding: 12px 0;
+}
+
+.app-nav__item {
+  font-size: 28px;
+  text-decoration: none;
+}
+.app-nav__item:hover {
+  text-shadow: 0 0 20px var(--button-primary);
+  cursor: pointer;
 }
