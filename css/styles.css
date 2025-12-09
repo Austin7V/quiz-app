@@ -212,3 +212,25 @@
   line-height: 1.4;
   max-width: 300px;
 }
+
+.profile__stats {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.stats__item {
+  flex: 1;
+  background-color: var(--card-light);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(86, 83, 83, 0.85);
+  text-align: center;
+}
+.stats__icon {
+  font-size: 32px;
+}
+.stats__value {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-main-light);
+}
