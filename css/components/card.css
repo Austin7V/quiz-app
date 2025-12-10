@@ -74,7 +74,10 @@
 }
 .tag-list__item {
   padding: 6px 14px;
-  background-color: var(--button-secondery);
+  background-color: var(--button-primary);
   border-radius: 999px;
   color: var(--app-text-secondary);
+}
+.tag-list__item--active {
+  background-color: var(--button-secondery);
 }
