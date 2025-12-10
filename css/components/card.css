@@ -44,7 +44,7 @@
   text-align: center;
 }
 .card__question {
-  margin: 0 10px 8px;
+  margin: 0 20px 8px;
   font-size: 20px;
   line-height: 1;
   color: var(--app-text-main);
