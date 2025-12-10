@@ -24,6 +24,10 @@
   background: none;
   font-size: 40px;
 }
+
+.card__bookmark--active {
+  text-shadow: 0 0 20px var(--button-secondery);
+}
 .card__bookmark:hover {
   text-shadow: 0 0 20px var(--button-primary);
   cursor: pointer;

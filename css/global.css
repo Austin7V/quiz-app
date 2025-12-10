@@ -28,10 +28,11 @@ body {
   --app-text-main: var(--text-main-light);
   --app-text-secondary: var(--text-secondery-light);
   background-color: var(--app-bg);
-  max-width: 390px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0;
   min-height: 100vh;
 }
 

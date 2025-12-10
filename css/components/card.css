@@ -4,6 +4,37 @@
   flex-direction: column;
   gap: 24px;
 }
+/* Media Query Tablet */
+@media (min-width: 600px) {
+  .app-shell {
+    max-width: 100%;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
+/* Media Query Desktop */
+@media (min-width: 1200px) {
+  .app-shell {
+    max-width: 100%;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 20%;
+  }
+}
 .card {
   position: relative;
   background-color: var(--app-card-bg);
