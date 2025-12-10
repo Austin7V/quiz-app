@@ -28,6 +28,9 @@
   text-shadow: 0 0 20px var(--button-primary);
   cursor: pointer;
 }
+.card__bookmark--active {
+  text-shadow: 0 0 20px var(--button-primary);
+}
 
 /* profile-buttons */
 
