@@ -49,12 +49,19 @@
   line-height: 1;
   color: var(--app-text-main);
 }
+.card__checkbox {
+  display: none;
+}
 .card__answer {
-  margin: 0 0 20px;
+  display: none;
+  margin: 20px 0 20px;
   font-style: italic;
   color: var(--app-text-secondary);
 }
 
+.card__checkbox:checked ~ .card__answer {
+  display: block;
+}
 /* card-tags */
 
 .tag-list {
