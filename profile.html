@@ -6,56 +6,54 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Quiz App</title>
   </head>
-  <body>
+  <body class="app-shell">
     <input type="checkbox" id="theme-toggle" class="theme-toggle" />
     <header class="app-header">
       <h1 class="app-header__title">Quiz App</h1>
     </header>
 
-    <div class="app-shell">
-      <section class="profile">
-        <header class="profile__header">
-          <div class="profile__avatar"></div>
-          <div class="profile__info">
-            <h2 class="profile__name">Sergey Badin</h2>
-          </div>
-        </header>
+    <section class="profile">
+      <header class="profile__header">
+        <div class="profile__avatar"></div>
+        <div class="profile__info">
+          <h2 class="profile__name">Sergey Badin</h2>
+        </div>
+      </header>
 
-        <section class="profile__about">
-          <h3 class="profile__section-title">About me</h3>
-          <p class="profile__text">…</p>
-        </section>
-
-        <section class="profile__stats stats">
-          <div class="stats__item">
-            <span class="stats__icon">❓</span>
-            <span class="stats__value">20</span>
-          </div>
-          <div class="stats__item">
-            <span class="stats__icon">🔖</span>
-            <span class="stats__value">5</span>
-          </div>
-        </section>
-
-        <section class="profile__settings">
-          <h3 class="profile__section-title">Settings</h3>
-          <label class="toggle" for="theme-toggle">
-            <span class="toggle__label">Dark Mode</span>
-            <span class="toggle__control">
-              <span class="toggle__thumb"></span>
-            </span>
-          </label>
-        </section>
+      <section class="profile__about">
+        <h3 class="profile__section-title">About me</h3>
+        <p class="profile__text">…</p>
       </section>
-      <footer class="app-footer">
-        <nav class="app-nav">
-          <a href="index.html" class="app-nav__item">🏠</a>
-          <a href="bookmarks.html" class="app-nav__item">🔖</a>
-          <a href="profile.html" class="app-nav__item app-nav__item--active"
-            >👤</a
-          >
-        </nav>
-      </footer>
-    </div>
+
+      <section class="profile__stats stats">
+        <div class="stats__item">
+          <span class="stats__icon">❓</span>
+          <span class="stats__value">20</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__icon">🔖</span>
+          <span class="stats__value">5</span>
+        </div>
+      </section>
+
+      <section class="profile__settings">
+        <h3 class="profile__section-title">Settings</h3>
+        <label class="toggle" for="theme-toggle">
+          <span class="toggle__label">Dark Mode</span>
+          <span class="toggle__control">
+            <span class="toggle__thumb"></span>
+          </span>
+        </label>
+      </section>
+    </section>
+    <footer class="app-footer">
+      <nav class="app-nav">
+        <a href="index.html" class="app-nav__item">🏠</a>
+        <a href="bookmarks.html" class="app-nav__item">🔖</a>
+        <a href="profile.html" class="app-nav__item app-nav__item--active"
+          >👤</a
+        >
+      </nav>
+    </footer>
   </body>
 </html>
