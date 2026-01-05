@@ -16,13 +16,13 @@
   cursor: pointer;
   background-color: var(--button-secondery);
 }
-.card__toggle::after {
+/* .card__toggle::after {
   content: "Show Answer";
   color: var(--app-text-main);
 }
 .card__checkbox:checked ~ .card__toggle::after {
   content: "Hide Answer";
-}
+} */
 
 /* card-bookmark */
 
