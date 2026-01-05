@@ -1,7 +1,5 @@
 console.clear();
 
-console.clear();
-
 const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
@@ -29,6 +27,15 @@ form.addEventListener("submit", (event) => {
   toggleButton.classList.add("card__toggle");
   toggleButton.textContent = "Show Answer";
 
+  toggleButton.addEventListener("click", () => {
+    answerElement.classList.toggle("hidden");
+
+    if (answerElement.classList.contains("hidden")) {
+      toggleButton.textContent = "Show Answer";
+    } else {
+      toggleButton.textContent = "Hide Answer";
+    }
+  });
   const tagsList = document.createElement("ul");
   tagsList.classList.add("card__tags", "tag-list");
 
