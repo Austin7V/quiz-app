@@ -53,15 +53,19 @@
   display: none;
 }
 .card__answer {
-  display: none;
+/*   display: none; */ -- JS global see hidden
   margin: 20px 0 20px;
   font-style: italic;
   color: var(--app-text-secondary);
 }
 
-.card__checkbox:checked ~ .card__answer {
-  display: block;
+.hidden {
+  display: none;
 }
+
+/* .card__checkbox:checked ~ .card__answer { -- neu JS
+  display: block;
+} */
 /* card-tags */
 
 .tag-list {

@@ -6,6 +6,7 @@
     <meta name="autor" content="Austin7V" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
     <link rel="icon" href="./assets/quiz.png" type="image/png" />
   </head>
   <body class="app-shell">
@@ -20,13 +21,12 @@
         <!--         card_1 -->
         <article class="card">
           <h2 class="card__question">Was bedeutet HTML?</h2>
-          <input type="checkbox" id="toggle-1" class="card__checkbox" />
-          <p class="card__answer">HyperText Markup Language.</p>
 
-          <label for="toggle-1" class="card__toggle"></label>
+          <p class="card__answer hidden">HyperText Markup Language.</p>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -40,13 +40,12 @@
           <h2 class="card__question">
             Wofür wird das &lt;img&gt; Tag verwendet?
           </h2>
-          <input type="checkbox" id="toggle-2" class="card__checkbox" />
-          <p class="card__answer">Um ein Bild einzufügen.</p>
+          <p class="card__answer hidden">Um ein Bild einzufügen.</p>
 
-          <label for="toggle-2" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -63,13 +62,12 @@
           <h2 class="card__question">
             Welches Tag enthält den sichtbaren Inhalt einer Webseite?
           </h2>
-          <input type="checkbox" id="toggle-3" class="card__checkbox" />
-          <p class="card__answer">&lt;body&gt;</p>
+          <p class="card__answer hidden">&lt;body&gt;</p>
 
-          <label for="toggle-3" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -80,13 +78,12 @@
         <!--         card_4 -->
         <article class="card">
           <h2 class="card__question">Wie erstellt man einen Link?</h2>
-          <input type="checkbox" id="toggle-4" class="card__checkbox" />
-          <p class="card__answer">Mit &lt;a href="..."&gt;</p>
+          <p class="card__answer hidden">Mit &lt;a href="..."&gt;</p>
 
-          <label for="toggle-4" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -102,13 +99,12 @@
           <h2 class="card__question">
             Wofür dient das &lt;header&gt; Element?
           </h2>
-          <input type="checkbox" id="toggle-5" class="card__checkbox" />
-          <p class="card__answer">Für den Kopfbereich einer Seite.</p>
+          <p class="card__answer hidden">Für den Kopfbereich einer Seite.</p>
 
-          <label for="toggle-5" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -119,13 +115,12 @@
         <!--         card_6 -->
         <article class="card">
           <h2 class="card__question">Was macht ein &lt;ul&gt;?</h2>
-          <input type="checkbox" id="toggle-6" class="card__checkbox" />
-          <p class="card__answer">Erstellt eine ungeordnete Liste.</p>
+          <p class="card__answer hidden">Erstellt eine ungeordnete Liste.</p>
 
-          <label for="toggle-6" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -141,13 +136,12 @@
           <h2 class="card__question">
             Darf es mehrere &lt;h1&gt; auf einer Seite geben?
           </h2>
-          <input type="checkbox" id="toggle-7" class="card__checkbox" />
-          <p class="card__answer">Nein, nur eine.</p>
+          <p class="card__answer hidden">Nein, nur eine.</p>
 
-          <label for="toggle-7" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
-            <li class="tag-list__item tag-list__item--active">html</li>
+            <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
@@ -158,14 +152,13 @@
         <!--         card_8 -->
         <article class="card">
           <h2 class="card__question">Was ist color in CSS?</h2>
-          <input type="checkbox" id="toggle-8" class="card__checkbox" />
-          <p class="card__answer">Die Textfarbe.</p>
+          <p class="card__answer hidden">Die Textfarbe.</p>
 
-          <label for="toggle-8" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
@@ -175,14 +168,13 @@
         <!--         card_9 -->
         <article class="card">
           <h2 class="card__question">Wofür steht background-color?</h2>
-          <input type="checkbox" id="toggle-9" class="card__checkbox" />
-          <p class="card__answer">Für die Hintergrundfarbe.</p>
+          <p class="card__answer hidden">Für die Hintergrundfarbe.</p>
 
-          <label for="toggle-9" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
@@ -192,14 +184,13 @@
         <!--         card_10 -->
         <article class="card">
           <h2 class="card__question">Was bedeutet margin?</h2>
-          <input type="checkbox" id="toggle-10" class="card__checkbox" />
-          <p class="card__answer">Außenabstand eines Elements.</p>
+          <p class="card__answer hidden">Außenabstand eines Elements.</p>
 
-          <label for="toggle-10" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
@@ -209,14 +200,13 @@
         <!--         card_11 -->
         <article class="card">
           <h2 class="card__question">Was bedeutet padding?</h2>
-          <input type="checkbox" id="toggle-11" class="card__checkbox" />
-          <p class="card__answer">Innenabstand eines Elements.</p>
+          <p class="card__answer hidden">Innenabstand eines Elements.</p>
 
-          <label for="toggle-11" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button
@@ -229,14 +219,13 @@
         <!--         card_12 -->
         <article class="card">
           <h2 class="card__question">Wie wählt man alle &lt;p&gt; Elemente?</h2>
-          <input type="checkbox" id="toggle-12" class="card__checkbox" />
-          <p class="card__answer">Mit dem Selektor p { }.</p>
+          <p class="card__answer hidden">Mit dem Selektor p { }.</p>
 
-          <label for="toggle-12" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
@@ -246,14 +235,13 @@
         <!--         card_13 -->
         <article class="card">
           <h2 class="card__question">Was macht border-radius?</h2>
-          <input type="checkbox" id="toggle-13" class="card__checkbox" />
-          <p class="card__answer">Rundet Ecken eines Elements.</p>
+          <p class="card__answer hidden">Rundet Ecken eines Elements.</p>
 
-          <label for="toggle-13" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
-            <li class="tag-list__item tag-list__item--active">css</li>
+            <li class="tag-list__item">css</li>
             <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
@@ -263,15 +251,14 @@
         <!--         card_14 -->
         <article class="card">
           <h2 class="card__question">Wie aktiviert man Flexbox?</h2>
-          <input type="checkbox" id="toggle-14" class="card__checkbox" />
-          <p class="card__answer">display: flex;.</p>
+          <p class="card__answer hidden">display: flex;.</p>
 
-          <label for="toggle-14" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -280,15 +267,14 @@
         <!--         card_15 -->
         <article class="card">
           <h2 class="card__question">Was macht justify-content?</h2>
-          <input type="checkbox" id="toggle-15" class="card__checkbox" />
-          <p class="card__answer">Richtet Elemente horizontal aus.</p>
+          <p class="card__answer hidden">Richtet Elemente horizontal aus.</p>
 
-          <label for="toggle-15" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -297,15 +283,14 @@
         <!--         card_16 -->
         <article class="card">
           <h2 class="card__question">Was macht align-items?</h2>
-          <input type="checkbox" id="toggle-16" class="card__checkbox" />
-          <p class="card__answer">Richtet Elemente vertikal aus.</p>
+          <p class="card__answer hidden">Richtet Elemente vertikal aus.</p>
 
-          <label for="toggle-16" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -314,15 +299,16 @@
         <!--         card_17 -->
         <article class="card">
           <h2 class="card__question">Was bedeutet flex-direction: row?</h2>
-          <input type="checkbox" id="toggle-17" class="card__checkbox" />
-          <p class="card__answer">Elemente werden nebeneinander angeordnet.</p>
+          <p class="card__answer hidden">
+            Elemente werden nebeneinander angeordnet.
+          </p>
 
-          <label for="toggle-17" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -331,15 +317,16 @@
         <!--         card_18 -->
         <article class="card">
           <h2 class="card__question">Was bedeutet flex-direction: column?</h2>
-          <input type="checkbox" id="toggle-18" class="card__checkbox" />
-          <p class="card__answer">Elemente werden untereinander angeordnet.</p>
+          <p class="card__answer hidden">
+            Elemente werden untereinander angeordnet.
+          </p>
 
-          <label for="toggle-18" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button
             class="card__bookmark card__bookmark--active"
@@ -353,15 +340,14 @@
           <h2 class="card__question">
             Wie erzeugt man Abstand zwischen Flex-Items?
           </h2>
-          <input type="checkbox" id="toggle-19" class="card__checkbox" />
-          <p class="card__answer">Mit gap.</p>
+          <p class="card__answer hidden">Mit gap.</p>
 
-          <label for="toggle-19" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -370,17 +356,16 @@
         <!--         card_20 -->
         <article class="card">
           <h2 class="card__question">Was macht flex-wrap?</h2>
-          <input type="checkbox" id="toggle-20" class="card__checkbox" />
-          <p class="card__answer">
+          <p class="card__answer hidden">
             Erlaubt, dass Elemente in die nächste Zeile umbrechen.
           </p>
 
-          <label for="toggle-20" class="card__toggle"></label>
+          <button type="button" class="card__toggle">Show Answer</button>
 
           <ul class="card__tags tag-list">
             <li class="tag-list__item">html</li>
             <li class="tag-list__item">css</li>
-            <li class="tag-list__item tag-list__item--active">flexbox</li>
+            <li class="tag-list__item">flexbox</li>
           </ul>
           <button class="card__bookmark" aria-label="Add to bookmarks">
             🔖
@@ -393,6 +378,7 @@
       <nav class="app-nav">
         <a href="index.html" class="app-nav__item app-nav__item--active">🏠</a>
         <a href="bookmarks.html" class="app-nav__item">🔖</a>
+        <a href="form.html" class="app-nav__item">➕</a>
         <a href="profile.html" class="app-nav__item">👤</a>
       </nav>
     </footer>
