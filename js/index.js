@@ -1,17 +1,20 @@
 console.clear();
 
-const bookmarkButton = document.querySelector(".card__bookmark");
+const cards = document.querySelectorAll(".card");
 
-bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("card__bookmark--active");
-});
+cards.forEach((card) => {
+  const bookmarkButton = card.querySelector(".card__bookmark");
+  const answerButton = card.querySelector(".card__toggle");
+  const answerText = card.querySelector(".card__answer");
 
-const answerButton = document.querySelector(".card__toggle");
-const answerText = document.querySelector(".card__answer");
+  bookmarkButton.addEventListener("click", () => {
+    bookmarkButton.classList.toggle("card__bookmark--active");
+  });
 
-answerButton.addEventListener("click", () => {
-  answerText.classList.toggle("hidden");
+  answerButton.addEventListener("click", () => {
+    answerText.classList.toggle("hidden");
 
-  const isHidden = answerText.classList.contains("hidden");
-  answerButton.textContent = isHidden ? "Show Answer" : "Hide Answer";
+    const isHidden = answerText.classList.contains("hidden");
+    answerButton.textContent = isHidden ? "Show Answer" : "Hide Answer";
+  });
 });

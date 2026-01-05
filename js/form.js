@@ -36,6 +36,7 @@ form.addEventListener("submit", (event) => {
       toggleButton.textContent = "Hide Answer";
     }
   });
+
   const tagsList = document.createElement("ul");
   tagsList.classList.add("card__tags", "tag-list");
 
