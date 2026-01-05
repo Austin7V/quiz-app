@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Austin7V" />
+    <title>Quiz App - Add</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/quiz.png" type="image/png" />
+    <script src="./js/form.js" defer></script>
+  </head>
+
+  <body class="app-shell">
+    <header class="app-header">
+      <h1 class="app-header__title">Add Question</h1>
+    </header>
+
+    <main class="app-main">
+      <form class="form" data-js="form">
+        <label class="form__label" for="question">Your question</label>
+        <textarea
+          class="form__textarea"
+          id="question"
+          name="question"
+          rows="4"
+          required
+        ></textarea>
+
+        <label class="form__label" for="answer">Your answer</label>
+        <textarea
+          class="form__textarea"
+          id="answer"
+          name="answer"
+          rows="4"
+          required
+        ></textarea>
+
+        <label class="form__label" for="tag">Tag</label>
+        <input class="form__input" id="tag" name="tag" type="text" required />
+
+        <button class="form__submit" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="app-footer">
+      <nav class="app-nav">
+        <a href="index.html" class="app-nav__item">🏠</a>
+        <a href="bookmarks.html" class="app-nav__item">🔖</a>
+        <a href="form.html" class="app-nav__item app-nav__item--active">➕</a>
+        <a href="profile.html" class="app-nav__item">👤</a>
+      </nav>
+    </footer>
+  </body>
+</html>
