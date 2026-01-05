@@ -2,6 +2,31 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 
+const questionInput = document.querySelector('[data-js="question-input"]');
+const answerInput = document.querySelector('[data-js="answer-input"]');
+
+const questionCounter = document.querySelector('[data-js="question-counter"]');
+const answerCounter = document.querySelector('[data-js="answer-counter"]');
+
+function updateCounter(inputElement, counterElement) {
+  const maxLength = inputElement.maxLength;
+  const currentLength = inputElement.value.length;
+  const remaining = maxLength - currentLength;
+
+  counterElement.textContent = remaining;
+}
+
+updateCounter(questionInput, questionCounter);
+updateCounter(answerInput, answerCounter);
+
+questionInput.addEventListener("input", () => {
+  updateCounter(questionInput, questionCounter);
+});
+
+answerInput.addEventListener("input", () => {
+  updateCounter(answerInput, answerCounter);
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 

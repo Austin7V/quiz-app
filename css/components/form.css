@@ -50,3 +50,10 @@
   background-color: var(--button-secondery);
   cursor: pointer;
 }
+
+.form__counter {
+  margin: 0;
+  font-size: 12px;
+  color: var(--app-text-secondary);
+  align-self: flex-end;
+}

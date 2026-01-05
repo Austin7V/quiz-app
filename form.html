@@ -24,7 +24,12 @@
           name="question"
           rows="4"
           required
+          maxlength="150"
+          data-js="question-input"
         ></textarea>
+        <p class="form__counter">
+          <span data-js="question-counter">150</span>
+        </p>
 
         <label class="form__label" for="answer">Your answer</label>
         <textarea
@@ -33,7 +38,12 @@
           name="answer"
           rows="4"
           required
+          maxlength="150"
+          data-js="answer-input"
         ></textarea>
+        <p class="form__counter">
+          <span data-js="answer-counter">150</span>
+        </p>
 
         <label class="form__label" for="tag">Tag</label>
         <input class="form__input" id="tag" name="tag" type="text" required />
